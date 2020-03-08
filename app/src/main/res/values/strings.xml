@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Corona Mapping</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="text_confirmed">Confirmed</string>
+    <string name="text_recovered">Recovered</string>
+    <string name="text_death">Death</string>
+    <string name="dash">-</string>
+    <string name="loading_text">memuat data…</string>
+</resources>

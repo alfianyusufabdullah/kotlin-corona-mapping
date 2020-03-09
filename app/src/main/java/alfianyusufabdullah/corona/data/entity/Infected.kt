@@ -1,6 +1,6 @@
 package alfianyusufabdullah.corona.data.entity
 
-data class Infected(var mainData: DataResponse?,var locations: Array<Location>) {
+data class Infected(var mainData: DataResponse?, var locations: Array<Location>) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false

@@ -37,7 +37,6 @@ abstract class BaseMapsActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
             WindowManager.LayoutParams.FLAG_FULLSCREEN
@@ -46,7 +45,6 @@ abstract class BaseMapsActivity : AppCompatActivity(), OnMapReadyCallback {
         window.navigationBarColor = ContextCompat.getColor(this, android.R.color.transparent)
 
         setContentView(contentId)
-
         val mapFragment = supportFragmentManager
             .findFragmentById(mapsId) as SupportMapFragment
         mapFragment.getMapAsync(this)

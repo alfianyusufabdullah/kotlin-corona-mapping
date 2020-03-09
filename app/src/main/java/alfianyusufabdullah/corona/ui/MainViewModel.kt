@@ -23,7 +23,6 @@ class MainViewModel(private val dataRepository: DataRepository, private val mapp
     private val _data = MutableLiveData<DataResponse>()
     private val _loading = MutableLiveData<Boolean>()
 
-
     val location: LiveData<Location>
         get() = _location
 
@@ -35,6 +34,7 @@ class MainViewModel(private val dataRepository: DataRepository, private val mapp
 
     fun retrieveCoronaInfectedLocationData() {
         viewModelScope.launch {
+
             dataRepository.loadMainData()
                 .zip(dataRepository.loadDataWithLocation()) { mainData, locations ->
                     Infected(mainData, locations ?: emptyArray())

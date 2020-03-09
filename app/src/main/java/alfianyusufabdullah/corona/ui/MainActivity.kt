@@ -21,7 +21,6 @@ class MainActivity : BaseMapsActivity() {
     private val mainViewModel: MainViewModel by viewModel()
 
     override val contentId = R.layout.activity_maps
-
     override val mapsId = R.id.maps_corona
 
     override fun onMarkerClick(marker: Marker) {
@@ -39,7 +38,6 @@ class MainActivity : BaseMapsActivity() {
         TransitionManager.beginDelayedTransition(rootParent)
 
         cardLocation.visibility = View.GONE
-
         mainViewModel.reloadInformationOnDashboard()
     }
 
